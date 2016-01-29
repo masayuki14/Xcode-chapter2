@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var myLabel: UILabel!
+    
+    @IBAction func tapButton() {
+        if (myLabel.text == "Hello") {
+            myLabel.text = "こんにちは"
+        } else {
+            myLabel.text = "Hi!"
+        }
 
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
